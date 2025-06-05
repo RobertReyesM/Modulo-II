@@ -1,0 +1,14 @@
+sudo apt update 
+
+sudo apt upgrade -y 
+
+cat /etc/apt/sources.list 
+
+apt-cache policy 
+
+apt-cache search bashtop 
+
+sudo apt install bashtop -y 
+
+sudo apt remove --purge bashtop -y 
+

@@ -1,0 +1,19 @@
+lsblk
+
+fdisk -l
+
+sudo fdisk /dev/sdb
+
+sudo mkfs -t ext4 /dev/sdb1
+
+mkdir ~/Desktop/montaje
+
+sudo mount /dev/sdb1 ~/Escritorio/montaje
+
+cd ~/Desktop/montaje
+
+sudo umount ~/Desktop/montaje
+
+sudo mount /dev/sda /mnt
+
+ls /mnt

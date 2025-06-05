@@ -1,0 +1,11 @@
+crontab -e
+
+0 23 * * * sudo apt update && sudo apt upgrade -y
+
+0 3 * * 0 sudo reboot
+
+ls /tmp
+
+echo "rm -rf /tmp/*" | at now + 1 minute
+
+atq
